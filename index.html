@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Nelly Naitengel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md relative z-50 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-xl">NN</div>
+                    <h1 class="text-2xl font-bold text-gray-900 tracking-tight">Nelly Naitengel</h1>
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-amber-600 font-bold transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-amber-600 font-medium transition">About</a>
+                    <a href="programs.html" class="text-gray-600 hover:text-amber-600 font-medium transition">Programs</a>
+                    <a href="music.html" class="text-gray-600 hover:text-amber-600 font-medium transition">Music Ministry</a>
+                    <a href="contact.html" class="bg-amber-600 text-white px-6 py-2.5 rounded-md font-semibold hover:bg-amber-700 shadow-sm transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-[80vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-amber-500 font-bold tracking-wider uppercase text-sm mb-4 block">Samburu County & Beyond</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
+                Restoring Hope.<br>Strengthening Communities.
+            </h1>
+            <p class="text-xl text-gray-200 mb-10 max-w-3xl mx-auto font-light">
+                Empowering the boy-child, nurturing potential, and creating lasting change through professional service, ministry, and community advocacy.
+            </p>
+            <div class="flex justify-center space-x-4 flex-col sm:flex-row gap-4 sm:gap-0">
+                <a href="programs.html" class="bg-amber-600 text-white px-8 py-3.5 rounded-md text-lg font-semibold hover:bg-amber-700 transition shadow-lg">
+                    Explore Our Work
+                </a>
+                <a href="about.html" class="bg-transparent border-2 border-white text-white px-8 py-3.5 rounded-md text-lg font-semibold hover:bg-white hover:text-gray-900 transition">
+                    Meet the Founder
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-16 bg-white flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="programs.html" class="block p-8 bg-gray-50 rounded-xl hover:shadow-lg transition text-center border border-gray-100">
+                    <i class="fas fa-hands-helping text-4xl text-amber-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Community Impact</h3>
+                    <p class="text-gray-600">Discover our boy-child empowerment and health initiatives.</p>
+                </a>
+                <a href="music.html" class="block p-8 bg-gray-50 rounded-xl hover:shadow-lg transition text-center border border-gray-100">
+                    <i class="fas fa-music text-4xl text-amber-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Music Ministry</h3>
+                    <p class="text-gray-600">Listen to 4 albums and 25 songs of hope and faith.</p>
+                </a>
+                <a href="contact.html" class="block p-8 bg-gray-50 rounded-xl hover:shadow-lg transition text-center border border-gray-100">
+                    <i class="fas fa-envelope-open-text text-4xl text-amber-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Get Involved</h3>
+                    <p class="text-gray-600">Partner with us to create lasting change in Samburu.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white pt-12 pb-6 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 mb-4">Restoring hope, strengthening communities, and creating lasting change in Samburu County.</p>
+            <p class="text-gray-500 text-sm mb-2">&copy; 2026 Nelly Naitengel. All rights reserved.</p>
+            <p class="text-gray-500 text-sm">Powered by <span class="text-amber-500 font-semibold tracking-wide">Extra Levels Marketing</span></p>
+        </div>
+    </footer>
+</body>
+</html>

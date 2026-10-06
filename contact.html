@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nelly Naitengel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+        .page-header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md relative z-50 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-xl">NN</div>
+                    <h1 class="text-2xl font-bold text-gray-900 tracking-tight">Nelly Naitengel</h1>
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-amber-600 font-medium transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-amber-600 font-medium transition">About</a>
+                    <a href="programs.html" class="text-gray-600 hover:text-amber-600 font-medium transition">Programs</a>
+                    <a href="music.html" class="text-gray-600 hover:text-amber-600 font-medium transition">Music Ministry</a>
+                    <a href="contact.html" class="text-amber-600 font-bold transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header py-24 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Get Involved</h1>
+        <p class="text-xl text-gray-200">Partner with us to transform Samburu County.</p>
+    </section>
+
+    <!-- Content -->
+    <section class="py-20 bg-white flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Contact Us</h2>
+                <p class="text-gray-600 mb-8">Whether you want to support our mentorship programs, invite Nelly for ministry, or collaborate with Lakira House of Design, we'd love to hear from you.</p>
+                <ul class="space-y-6 text-gray-600">
+                    <li class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-amber-600 text-2xl mr-4"></i>
+                        <span>Samburu County, Kenya</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope text-amber-600 text-2xl mr-4"></i>
+                        <a href="mailto:info@nellynaitengel.org" class="hover:text-amber-600 transition">info@nellynaitengel.org</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt text-amber-600 text-2xl mr-4"></i>
+                        <span>+254 (0) 700 000 000</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 py-2 px-3 border" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 py-2 px-3 border" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 py-2 px-3 border" placeholder="How can we partner together?"></textarea>
+                    </div>
+                    <button type="button" class="w-full bg-amber-600 text-white font-bold py-3 px-4 rounded-md hover:bg-amber-700 transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white pt-12 pb-6 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 mb-4">Restoring hope, strengthening communities, and creating lasting change in Samburu County.</p>
+            <p class="text-gray-500 text-sm mb-2">&copy; 2026 Nelly Naitengel. All rights reserved.</p>
+            <p class="text-gray-500 text-sm">Powered by <span class="text-amber-500 font-semibold tracking-wide">Extra Levels Marketing</span></p>
+        </div>
+    </footer>
+</body>
+</html>
