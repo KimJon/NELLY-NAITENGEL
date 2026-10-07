@@ -22,44 +22,46 @@
 </head>
 <body class="bg-gray-50">
 
-    <!-- Navbar -->
+        <!-- Sticky Navbar -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="index.html" class="flex items-center gap-3">
-                    <div class="w-11 h-11 rounded-full bg-yellow-600 flex items-center justify-center text-white font-bold text-lg shadow">NN</div>
+                    <div class="w-10 h-10 md:w-11 md:h-11 rounded-full bg-yellow-600 flex items-center justify-center text-white font-bold text-base md:text-lg shadow flex-shrink-0">NN</div>
                     <div>
-                        <p class="font-bold text-gray-900 text-lg leading-tight">Nelly Naitengel</p>
-                        <p class="text-xs text-gray-500 leading-tight">Minister Â· Artist Â· Advocate</p>
+                        <p class="font-bold text-gray-900 text-base md:text-lg leading-tight">Nelly Naitengel</p>
+                        <p class="text-[10px] md:text-xs text-gray-500 leading-tight">Minister · Artist · Advocate</p>
                     </div>
                 </a>
-                <div class="hidden md:flex items-center space-x-7">
-                    <a href="index.html" class="nav-link text-gray-600 text-sm">Home</a>
+                <div class="hidden md:flex items-center space-x-5 lg:space-x-7">
+                    <a href="index.html" class="nav-link text-sm">Home</a>
                     <a href="about.html" class="nav-link text-gray-600 text-sm">About</a>
                     <a href="programs.html" class="nav-link text-gray-600 text-sm">Programs</a>
-                    <a href="music.html" class="nav-link active text-sm">Music Ministry</a>
+                    <a href="music.html" class="nav-link text-gray-600 text-sm">Music Ministry</a>
                     <a href="gallery.html" class="nav-link text-gray-600 text-sm">Gallery</a>
-                    <a href="contact.html" class="btn-primary px-5 py-2.5 rounded-lg text-sm font-semibold shadow">Contact Us</a>
+                    <a href="contact.html" class="btn-primary px-4 py-2 rounded-lg text-sm font-semibold shadow">Contact Us</a>
                 </div>
-                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 rounded text-gray-600">
-                    <i class="fas fa-bars text-xl"></i>
+                <!-- Mobile menu button -->
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 rounded text-gray-600 hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
-                <a href="index.html" class="block py-2 text-gray-600">Home</a>
-                <a href="about.html" class="block py-2 text-gray-600">About</a>
-                <a href="programs.html" class="block py-2 text-gray-600">Programs</a>
-                <a href="music.html" class="block py-2 text-yellow-600 font-bold">Music Ministry</a>
-                <a href="gallery.html" class="block py-2 text-gray-600">Gallery</a>
-                <a href="contact.html" class="block py-2 text-gray-600">Contact Us</a>
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-2xl border-t border-gray-100 px-6 py-6 space-y-4 z-50">
+                <a href="index.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">Home</a>
+                <a href="about.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">About</a>
+                <a href="programs.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">Programs</a>
+                <a href="music.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">Music Ministry</a>
+                <a href="gallery.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">Gallery</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">Contact Us</a>
             </div>
         </div>
     </nav>
 
     <!-- Page Hero -->
-    <section class="page-hero py-28 text-center">
+    <section class="page-hero py-16 md:py-28 text-center">
         <p class="section-label text-yellow-400 mb-3">A Decade of Praise</p>
-        <h1 class="playfair text-5xl md:text-6xl font-bold text-white mb-4">Music Ministry</h1>
+        <h1 class="playfair text-4xl md:text-5xl md:text-4xl md:text-6xl font-bold text-white mb-4">Music Ministry</h1>
         <p class="text-xl text-gray-200 max-w-2xl mx-auto">Using her voice to heal, inspire and spread the gospel across Kenya and beyond.</p>
     </section>
 
@@ -74,8 +76,8 @@
     </div>
 
     <!-- Ministry Story + Image -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section class="py-12 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <div>
                 <p class="section-label mb-2">The Ministry</p>
                 <h2 class="playfair text-4xl font-bold text-gray-900 mb-6">Singing for His Glory</h2>
@@ -104,7 +106,7 @@
     </section>
 
     <!-- Discography -->
-    <section class="py-20 bg-gray-900 text-white">
+    <section class="py-12 md:py-20 bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-14">
                 <p class="section-label text-yellow-400 mb-2">Discography</p>
@@ -158,9 +160,9 @@
     </section>
 
     <!-- 10th Anniversary -->
-    <section class="py-20 bg-yellow-50 border-t border-yellow-100">
+    <section class="py-12 md:py-20 bg-yellow-50 border-t border-yellow-100">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <i class="fas fa-star text-yellow-500 text-5xl mb-6"></i>
+            <i class="fas fa-star text-yellow-500 text-4xl md:text-5xl mb-6"></i>
             <p class="section-label mb-2">Milestone Moment</p>
             <h2 class="playfair text-4xl font-bold text-gray-900 mb-6">10th Anniversary Celebration</h2>
             <p class="text-gray-600 text-lg leading-relaxed mb-8">
@@ -171,7 +173,7 @@
     </section>
 
     <!-- Booking CTA -->
-    <section class="py-20 bg-yellow-700">
+    <section class="py-12 md:py-20 bg-yellow-700">
         <div class="max-w-3xl mx-auto px-4 text-center">
             <h2 class="playfair text-4xl font-bold text-white mb-4">Book Nelly for Your Event</h2>
             <p class="text-yellow-100 text-lg mb-8">Whether it's a church concert, national conference, crusade, or community event â€” Nelly brings a powerful anointing and professional performance.</p>
@@ -222,3 +224,5 @@
     </footer>
 </body>
 </html>
+
+
