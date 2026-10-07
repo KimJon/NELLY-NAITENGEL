@@ -6,87 +6,251 @@
     <title>Contact | Nelly Naitengel</title>
     <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
-        .page-header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; }
+        body { font-family: 'Inter', sans-serif; }
+        .playfair { font-family: 'Playfair Display', serif; }
+        .page-hero { background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.65)), url('WhatsApp Image 2026-09-28 at 18.01.59 (1).jpeg') center / cover no-repeat; }
+        .section-label { color: #d97706; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.8rem; }
+        .nav-link { transition: all 0.2s; }
+        .nav-link:hover { color: #d97706; }
+        .nav-link.active { color: #d97706; font-weight: 700; border-bottom: 2px solid #d97706; }
+        .btn-primary { background: #d97706; color: #fff; transition: background 0.2s; }
+        .btn-primary:hover { background: #b45309; }
+        input, textarea, select { outline: none; }
+        input:focus, textarea:focus { border-color: #d97706 !important; box-shadow: 0 0 0 3px rgba(217,119,6,0.15); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50">
+
     <!-- Navbar -->
-    <nav class="bg-white shadow-md relative z-50 w-full">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
-                    <div class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-xl">NN</div>
-                    <h1 class="text-2xl font-bold text-gray-900 tracking-tight">Nelly Naitengel</h1>
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-full bg-yellow-600 flex items-center justify-center text-white font-bold text-lg shadow">NN</div>
+                    <div>
+                        <p class="font-bold text-gray-900 text-lg leading-tight">Nelly Naitengel</p>
+                        <p class="text-xs text-gray-500 leading-tight">Minister · Artist · Advocate</p>
+                    </div>
                 </a>
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-gray-600 hover:text-amber-600 font-medium transition">Home</a>
-                    <a href="about.html" class="text-gray-600 hover:text-amber-600 font-medium transition">About</a>
-                    <a href="programs.html" class="text-gray-600 hover:text-amber-600 font-medium transition">Programs</a>
-                    <a href="music.html" class="text-gray-600 hover:text-amber-600 font-medium transition">Music Ministry</a>
-                    <a href="contact.html" class="text-amber-600 font-bold transition">Contact</a>
+                <div class="hidden md:flex items-center space-x-7">
+                    <a href="index.html" class="nav-link text-gray-600 text-sm">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 text-sm">About</a>
+                    <a href="programs.html" class="nav-link text-gray-600 text-sm">Programs</a>
+                    <a href="music.html" class="nav-link text-gray-600 text-sm">Music Ministry</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 text-sm">Gallery</a>
+                    <a href="contact.html" class="nav-link active text-sm">Contact</a>
                 </div>
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 rounded text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-600">About</a>
+                <a href="programs.html" class="block py-2 text-gray-600">Programs</a>
+                <a href="music.html" class="block py-2 text-gray-600">Music Ministry</a>
+                <a href="gallery.html" class="block py-2 text-gray-600">Gallery</a>
+                <a href="contact.html" class="block py-2 text-yellow-600 font-bold">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <section class="page-header py-24 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Get Involved</h1>
-        <p class="text-xl text-gray-200">Partner with us to transform Samburu County.</p>
+    <!-- Page Hero -->
+    <section class="page-hero py-28 text-center">
+        <p class="section-label text-yellow-400 mb-3">Reach Out</p>
+        <h1 class="playfair text-5xl md:text-6xl font-bold text-white mb-4">Get In Touch</h1>
+        <p class="text-xl text-gray-200 max-w-2xl mx-auto">Whether to book a ministry event, support our programs, or partner with Lakira House of Design — we'd love to hear from you.</p>
     </section>
 
-    <!-- Content -->
-    <section class="py-20 bg-white flex-grow">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">Contact Us</h2>
-                <p class="text-gray-600 mb-8">Whether you want to support our mentorship programs, invite Nelly for ministry, or collaborate with Lakira House of Design, we'd love to hear from you.</p>
-                <ul class="space-y-6 text-gray-600">
-                    <li class="flex items-center">
-                        <i class="fas fa-map-marker-alt text-amber-600 text-2xl mr-4"></i>
-                        <span>Samburu County, Kenya</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-envelope text-amber-600 text-2xl mr-4"></i>
-                        <a href="mailto:info@nellynaitengel.org" class="hover:text-amber-600 transition">info@nellynaitengel.org</a>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-phone-alt text-amber-600 text-2xl mr-4"></i>
-                        <span>+254 (0) 700 000 000</span>
-                    </li>
-                </ul>
+    <!-- Contact Cards -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="tel:+254721570698" class="flex flex-col items-center text-center bg-yellow-50 border border-yellow-100 p-8 rounded-2xl hover:shadow-md transition">
+                <div class="w-14 h-14 rounded-full bg-yellow-600 flex items-center justify-center text-white text-2xl mb-4">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-lg mb-1">Call / WhatsApp</h3>
+                <p class="text-yellow-700 font-semibold">+254 721 570 698</p>
+                <p class="text-gray-500 text-sm mt-2">Mon–Sat, 8am – 6pm EAT</p>
+            </a>
+            <a href="mailto:info@nellynaitengel.com" class="flex flex-col items-center text-center bg-yellow-50 border border-yellow-100 p-8 rounded-2xl hover:shadow-md transition">
+                <div class="w-14 h-14 rounded-full bg-yellow-600 flex items-center justify-center text-white text-2xl mb-4">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-lg mb-1">Email Us</h3>
+                <p class="text-yellow-700 font-semibold">info@nellynaitengel.com</p>
+                <p class="text-gray-500 text-sm mt-2">We respond within 24 hours</p>
+            </a>
+            <div class="flex flex-col items-center text-center bg-yellow-50 border border-yellow-100 p-8 rounded-2xl">
+                <div class="w-14 h-14 rounded-full bg-yellow-600 flex items-center justify-center text-white text-2xl mb-4">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-lg mb-1">Location</h3>
+                <p class="text-yellow-700 font-semibold">Samburu County, Kenya</p>
+                <p class="text-gray-500 text-sm mt-2">Available for national events</p>
             </div>
-            <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
-                <form class="space-y-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Name</label>
-                        <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 py-2 px-3 border" placeholder="Your Name">
+        </div>
+    </section>
+
+    <!-- Contact Form + What to Inquire About -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+            <!-- Left: Inquire options -->
+            <div>
+                <p class="section-label mb-2">How Can We Help?</p>
+                <h2 class="playfair text-4xl font-bold text-gray-900 mb-8">What Would You Like to Do?</h2>
+
+                <div class="space-y-5">
+                    <div class="flex items-start gap-5 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-100 flex items-center justify-center text-yellow-600 text-xl flex-shrink-0">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-lg">Book for Ministry / Events</h3>
+                            <p class="text-gray-600 text-sm mt-1">Invite Nelly to minister at your church, conference, crusade, or national event. She brings a powerful anointed worship experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-5 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-100 flex items-center justify-center text-yellow-600 text-xl flex-shrink-0">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-lg">Support Wells of Re_Birth</h3>
+                            <p class="text-gray-600 text-sm mt-1">Partner with our boy-child mentorship & recovery CBO. Donations, volunteer work, and corporate partnerships are welcome.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-5 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-100 flex items-center justify-center text-yellow-600 text-xl flex-shrink-0">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-lg">Lakira House of Design</h3>
+                            <p class="text-gray-600 text-sm mt-1">Interested in our creative design enterprise? Get in touch to collaborate, commission work, or explore partnership opportunities.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-5 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-100 flex items-center justify-center text-yellow-600 text-xl flex-shrink-0">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-lg">General Inquiry</h3>
+                            <p class="text-gray-600 text-sm mt-1">Have a question or just want to connect? Send us a message and we'll get back to you promptly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="mt-10">
+                    <h4 class="font-bold text-gray-900 mb-4">Follow Nelly Online</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="#" class="flex items-center gap-2 bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-pink-700 transition">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#" class="flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-red-700 transition">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                        <a href="#" class="flex items-center gap-2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-700 transition">
+                            <i class="fab fa-tiktok"></i> TikTok
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Form -->
+            <div class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100">
+                <h2 class="playfair text-3xl font-bold text-gray-900 mb-2">Send a Message</h2>
+                <p class="text-gray-500 text-sm mb-8">Fill in the form and we'll respond within 24 hours.</p>
+                <form class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">First Name</label>
+                            <input type="text" placeholder="Jane" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Last Name</label>
+                            <input type="text" placeholder="Doe" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm transition">
+                        </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 py-2 px-3 border" placeholder="you@example.com">
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address</label>
+                        <input type="email" placeholder="you@example.com" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm transition">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700">Message</label>
-                        <textarea rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 py-2 px-3 border" placeholder="How can we partner together?"></textarea>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Phone / WhatsApp</label>
+                        <input type="tel" placeholder="+254 700 000 000" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm transition">
                     </div>
-                    <button type="button" class="w-full bg-amber-600 text-white font-bold py-3 px-4 rounded-md hover:bg-amber-700 transition">
-                        Send Message
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Purpose of Contact</label>
+                        <select class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-700 transition">
+                            <option value="">-- Select an option --</option>
+                            <option>Book for Ministry / Events</option>
+                            <option>Support Wells of Re_Birth CBO</option>
+                            <option>Lakira House of Design Inquiry</option>
+                            <option>Media / Interview Request</option>
+                            <option>General Inquiry</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Your Message</label>
+                        <textarea rows="5" placeholder="Tell us how we can help you..." class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm transition resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full py-4 rounded-xl font-bold text-lg shadow-lg">
+                        <i class="fas fa-paper-plane mr-2"></i> Send Message
                     </button>
+                    <p class="text-center text-gray-400 text-xs">Or call/WhatsApp directly: <a href="tel:+254721570698" class="text-yellow-600 font-semibold">+254 721 570 698</a></p>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-950 text-white pt-12 pb-6 mt-auto">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-gray-400 mb-4">Restoring hope, strengthening communities, and creating lasting change in Samburu County.</p>
-            <p class="text-gray-500 text-sm mb-2">&copy; 2026 Nelly Naitengel. All rights reserved.</p>
-            <p class="text-gray-500 text-sm">Powered by <span class="text-amber-500 font-semibold tracking-wide">Extra Levels Marketing</span></p>
+    <footer class="bg-gray-950 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-gray-800">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center text-white font-bold">NN</div>
+                    <h3 class="text-xl font-bold">Nelly Naitengel</h3>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">Restoring hope, raising sons, and creating lasting change in Samburu County and beyond through faith, service, and community.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-yellow-600 hover:text-white transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-yellow-600 hover:text-white transition"><i class="fab fa-youtube text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-yellow-600 hover:text-white transition"><i class="fab fa-instagram text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-yellow-600 hover:text-white transition"><i class="fab fa-tiktok text-sm"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-gray-100 mb-5">Quick Links</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-yellow-500 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-500 transition">About Nelly</a></li>
+                    <li><a href="programs.html" class="hover:text-yellow-500 transition">Programs</a></li>
+                    <li><a href="music.html" class="hover:text-yellow-500 transition">Music Ministry</a></li>
+                    <li><a href="gallery.html" class="hover:text-yellow-500 transition">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-500 transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-gray-100 mb-5">Contact</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt text-yellow-500 mt-1"></i><span>Samburu County, Kenya</span></li>
+                    <li class="flex items-center gap-3"><i class="fas fa-phone text-yellow-500"></i><a href="tel:+254721570698" class="hover:text-yellow-500">+254 721 570 698</a></a></li>
+                    <li class="flex items-center gap-3"><i class="fas fa-envelope text-yellow-500"></i><a href="mailto:info@nellynaitengel.com" class="hover:text-yellow-500">info@nellynaitengel.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-2">
+            <p>&copy; 2026 Nelly Naitengel. All rights reserved.</p>
+            <p>Powered by <span class="text-yellow-500 font-semibold">Extra Levels Marketing</span></p>
         </div>
     </footer>
 </body>
