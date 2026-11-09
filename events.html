@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events | Praise Jam Concert & CBO Launch | Nelly Naitengel</title>
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .playfair { font-family: 'Playfair Display', serif; }
+        .nav-link { transition: all 0.2s; }
+        .nav-link:hover { color: #d97706; }
+        .nav-link.active { color: #d97706; font-weight: 700; border-bottom: 2px solid #d97706; }
+        .btn-primary { background: #d97706; color: #fff; transition: all 0.2s; }
+        .btn-primary:hover { background: #b45309; transform: translateY(-1px); }
+        .btn-outline-gold { border: 2px solid #d97706; color: #d97706; transition: all 0.2s; }
+        .btn-outline-gold:hover { background: #d97706; color: #fff; }
+        .poster-card { transition: all 0.3s ease; }
+        .poster-card:hover { transform: translateY(-6px); box-shadow: 0 25px 35px -5px rgba(0,0,0,0.3); }
+        .section-label { color: #d97706; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.8rem; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Top Announcement Ribbon -->
+    <div class="bg-gradient-to-r from-red-700 via-yellow-600 to-amber-700 text-white text-xs md:text-sm font-semibold py-2.5 px-4 text-center">
+        <span>🎉 <strong>UPCOMING EVENT:</strong> Praise Jam Concert &amp; Wells of Re-Birth CBO Launch &mdash; Friday, 20th Nov 2026 @ Kenyatta Stadium, Maralal (Free Entry!)</span>
+        <a href="#posters" class="underline font-bold text-yellow-200 hover:text-white ml-2">View Posters ↓</a>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="bg-white text-gray-900 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 md:w-11 md:h-11 rounded-full bg-yellow-600 flex items-center justify-center text-white font-bold text-base md:text-lg shadow flex-shrink-0">NN</div>
+                    <div>
+                        <p class="font-bold text-gray-900 text-base md:text-lg leading-tight">Nelly Naitengel</p>
+                        <p class="text-[10px] md:text-xs text-gray-500 leading-tight">Minister · Artist · Advocate</p>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-5 lg:space-x-7">
+                    <a href="index.html" class="nav-link text-gray-600 text-sm">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 text-sm">About</a>
+                    <a href="programs.html" class="nav-link text-gray-600 text-sm">Programs</a>
+                    <a href="music.html" class="nav-link text-gray-600 text-sm">Music Ministry</a>
+                    <a href="events.html" class="nav-link active text-sm">Events</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 text-sm">Gallery</a>
+                    <a href="contact.html" class="btn-primary px-4 py-2 rounded-lg text-sm font-semibold shadow">Contact Us</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 rounded text-gray-600 hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-2xl border-t border-gray-100 px-6 py-6 space-y-4 z-50">
+                <a href="index.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">Home</a>
+                <a href="about.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">About</a>
+                <a href="programs.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">Programs</a>
+                <a href="music.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">Music Ministry</a>
+                <a href="events.html" class="block text-yellow-600 font-bold text-lg">Events</a>
+                <a href="gallery.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">Gallery</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-yellow-600 text-lg font-medium">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Event Hero Section -->
+    <header class="relative py-16 md:py-24 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-900 border-b border-gray-800 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-repeat" style="background-image: radial-gradient(#f59e0b 1px, transparent 1px); background-size: 24px 24px;"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 bg-red-600 text-white text-xs md:text-sm font-extrabold uppercase px-4 py-1.5 rounded-full mb-6 tracking-widest shadow-lg animate-pulse">
+                <i class="fas fa-calendar-star"></i> Mega Upcoming Event
+            </div>
+
+            <h1 class="playfair text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">
+                Praise Jam <span class="text-red-500">Concert</span>
+            </h1>
+            <p class="text-xl md:text-3xl font-bold text-yellow-400 mb-6 font-serif">
+                &amp; Official Wells of Re-Birth CBO Launch
+            </p>
+
+            <p class="text-gray-300 text-base md:text-xl max-w-3xl mx-auto leading-relaxed mb-8 font-light">
+                Theme: <strong class="text-white font-semibold">&ldquo;Empowered and Responsible Young Men&rdquo;</strong> &mdash; Restoring, mentoring, and guiding the boy-child from addiction into purpose and responsible manhood.
+            </p>
+
+            <!-- Quick Info Badges Bar -->
+            <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 text-center mb-10">
+                <div class="bg-gray-800 border border-gray-700 p-4 rounded-2xl shadow">
+                    <i class="fas fa-calendar-alt text-yellow-400 text-2xl mb-2"></i>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-wider">Date</p>
+                    <p class="text-white font-bold text-base md:text-lg">Friday, 20 Nov 2026</p>
+                </div>
+                <div class="bg-gray-800 border border-gray-700 p-4 rounded-2xl shadow">
+                    <i class="fas fa-map-marker-alt text-red-400 text-2xl mb-2"></i>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-wider">Venue</p>
+                    <p class="text-white font-bold text-base md:text-lg">Kenyatta Stadium</p>
+                    <p class="text-xs text-yellow-400">Maralal, Samburu</p>
+                </div>
+                <div class="bg-gray-800 border border-gray-700 p-4 rounded-2xl shadow">
+                    <i class="fas fa-ticket-alt text-green-400 text-2xl mb-2"></i>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-wider">Admission</p>
+                    <p class="text-green-400 font-extrabold text-base md:text-lg">ENTRY FREE</p>
+                    <p class="text-xs text-gray-400">All Are Welcome</p>
+                </div>
+                <div class="bg-gray-800 border border-gray-700 p-4 rounded-2xl shadow">
+                    <i class="fas fa-handshake text-blue-400 text-2xl mb-2"></i>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-wider">Partnerships</p>
+                    <a href="tel:+254721570698" class="text-yellow-400 font-bold text-sm md:text-base hover:underline block">+254 721 570 698</a>
+                </div>
+            </div>
+
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#posters" class="btn-primary px-8 py-4 rounded-xl text-base md:text-lg font-bold shadow-xl flex items-center justify-center gap-2">
+                    <i class="fas fa-images"></i> View Official Posters
+                </a>
+                <a href="https://wa.me/254721570698?text=Hello%20Nelly%20Naitengel,%20I%20would%20like%20to%20partner/sponsor%20the%20Praise%20Jam%20Concert%20and%20CBO%20Launch" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-base md:text-lg font-bold shadow-xl flex items-center justify-center gap-2 transition">
+                    <i class="fab fa-whatsapp text-xl"></i> Partner / Sponsor on WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Official Event Posters Section -->
+    <section id="posters" class="py-16 md:py-24 bg-gray-950 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <p class="section-label mb-2">Event Artwork</p>
+                <h2 class="playfair text-3xl md:text-5xl font-bold text-white">Official Event Posters</h2>
+                <div class="w-20 h-1 bg-yellow-600 mx-auto mt-4"></div>
+                <p class="text-gray-400 text-sm md:text-base mt-3 max-w-2xl mx-auto">
+                    Download and share the official posters for the Praise Jam Concert and the Wells of Re-Birth CBO Launch.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 items-start">
+                
+                <!-- Poster 1: Praise Jam Concert & Star Lineup -->
+                <div class="bg-gray-900 border border-gray-800 rounded-3xl p-6 md:p-8 poster-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-red-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                            Concert Poster &middot; Star Lineup
+                        </span>
+                        <span class="text-xs text-yellow-400 font-semibold">20th Nov 2026</span>
+                    </div>
+
+                    <div class="overflow-hidden rounded-2xl bg-black shadow-2xl mb-6">
+                        <img src="praise-jam-concert-artists.jpg" alt="Praise Jam Concert Poster with Rose Muhando and Nelly Naitengel" class="w-full h-auto object-contain hover:scale-102 transition duration-300">
+                    </div>
+
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-2">Praise Jam Concert &mdash; All-Star Ministry</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Featuring gospel legend <strong>Rose Muhando</strong>, host minister <strong>Nelly Naitengel</strong>, <strong>Cathy Komen</strong>, <strong>Melody Ndichu</strong>, <strong>Agatha Naserian</strong>, <strong>Timothy Opoti</strong>, <strong>Charity Nashipae</strong>, and many more.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a href="praise-jam-concert-artists.jpg" download="praise-jam-concert-artists.jpg" class="btn-primary px-5 py-3 rounded-xl font-bold text-sm inline-flex items-center gap-2 shadow">
+                            <i class="fas fa-download"></i> Download Poster (High-Res)
+                        </a>
+                        <a href="praise-jam-concert-artists.jpg" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white px-5 py-3 rounded-xl font-semibold text-sm inline-flex items-center gap-2 transition">
+                            <i class="fas fa-expand"></i> View Fullscreen
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Poster 2: Wells of Re-Birth CBO Official Launch -->
+                <div class="bg-gray-900 border border-gray-800 rounded-3xl p-6 md:p-8 poster-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-yellow-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                            Official CBO Launch &middot; Dignitaries
+                        </span>
+                        <span class="text-xs text-yellow-400 font-semibold">20th Nov 2026</span>
+                    </div>
+
+                    <div class="overflow-hidden rounded-2xl bg-black shadow-2xl mb-6">
+                        <img src="praise-jam-cbo-launch.jpg" alt="Wells of Re-Birth CBO Launch Poster" class="w-full h-auto object-contain hover:scale-102 transition duration-300">
+                    </div>
+
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-2">Wells of Re-Birth CBO Official Launch</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Official community kickoff for <strong>Wells of Re-Birth</strong> boy-child mentorship and recovery CBO. Theme: <em>&ldquo;Empowered and Responsible Young Men&rdquo;</em> with county leaders, clergy, and dignitaries.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a href="praise-jam-cbo-launch.jpg" download="praise-jam-cbo-launch.jpg" class="btn-primary px-5 py-3 rounded-xl font-bold text-sm inline-flex items-center gap-2 shadow">
+                            <i class="fas fa-download"></i> Download Poster (High-Res)
+                        </a>
+                        <a href="praise-jam-cbo-launch.jpg" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white px-5 py-3 rounded-xl font-semibold text-sm inline-flex items-center gap-2 transition">
+                            <i class="fas fa-expand"></i> View Fullscreen
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Performing Artists Spotlight -->
+    <section class="py-16 md:py-24 bg-gray-900 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <p class="section-label mb-2">Ministering Lineup</p>
+                <h2 class="playfair text-3xl md:text-5xl font-bold text-white">Featured Gospel Artists</h2>
+                <div class="w-20 h-1 bg-yellow-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Artist 1: Rose Muhando -->
+                <div class="bg-gray-800 border-2 border-yellow-500 rounded-2xl p-6 text-center shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-[10px] font-extrabold uppercase px-3 py-1 rounded-bl-lg">Guest Star</div>
+                    <div class="w-20 h-20 rounded-full bg-yellow-600 bg-opacity-20 flex items-center justify-center text-yellow-400 text-3xl mx-auto mb-4 border border-yellow-500">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Rose Muhando</h3>
+                    <p class="text-yellow-400 text-xs font-semibold uppercase tracking-wider mb-3">East African Gospel Legend</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Celebrated international recording gospel star ministering live with high-energy praise and soul-stirring worship.
+                    </p>
+                </div>
+
+                <!-- Artist 2: Nelly Naitengel -->
+                <div class="bg-gray-800 border-2 border-yellow-600 rounded-2xl p-6 text-center shadow-lg">
+                    <div class="w-20 h-20 rounded-full bg-yellow-600 bg-opacity-20 flex items-center justify-center text-yellow-400 text-3xl mx-auto mb-4 border border-yellow-600">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Nelly Naitengel</h3>
+                    <p class="text-yellow-400 text-xs font-semibold uppercase tracking-wider mb-3">Host &amp; Founder</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Renowned Samburu gospel artist (4 albums, Mbingu Mpya award winner) and founder of Wells of Re-Birth CBO.
+                    </p>
+                </div>
+
+                <!-- Artist 3: Cathy Komen -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 text-center shadow-lg">
+                    <div class="w-20 h-20 rounded-full bg-gray-700 flex items-center justify-center text-yellow-400 text-3xl mx-auto mb-4">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Cathy Komen</h3>
+                    <p class="text-yellow-400 text-xs font-semibold uppercase tracking-wider mb-3">Gospel Recording Artist</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Anointed praise minister known for powerful vocal delivery and inspiring gospel tracks across Kenya.
+                    </p>
+                </div>
+
+                <!-- Artist 4: Melody Ndichu -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 text-center shadow-lg">
+                    <div class="w-20 h-20 rounded-full bg-gray-700 flex items-center justify-center text-yellow-400 text-3xl mx-auto mb-4">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Melody Ndichu</h3>
+                    <p class="text-yellow-400 text-xs font-semibold uppercase tracking-wider mb-3">Worship Minister</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Beloved Kenyan gospel minister bringing heart-touching praise that sets atmospheres of renewal and hope.
+                    </p>
+                </div>
+
+                <!-- Artist 5: Agatha Naserian -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 text-center shadow-lg">
+                    <div class="w-20 h-20 rounded-full bg-gray-700 flex items-center justify-center text-yellow-400 text-3xl mx-auto mb-4">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Agatha Naserian</h3>
+                    <p class="text-yellow-400 text-xs font-semibold uppercase tracking-wider mb-3">Samburu Gospel Minister</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Championing worship rooted in cultural authenticity and transformative community faith.
+                    </p>
+                </div>
+
+                <!-- Artist 6: Timothy Opoti -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 text-center shadow-lg">
+                    <div class="w-20 h-20 rounded-full bg-gray-700 flex items-center justify-center text-yellow-400 text-3xl mx-auto mb-4">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Timothy Opoti</h3>
+                    <p class="text-yellow-400 text-xs font-semibold uppercase tracking-wider mb-3">Gospel Artist</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Dynamic gospel minister uplifting congregations with spirit-filled contemporary praise.
+                    </p>
+                </div>
+
+                <!-- Artist 7: Charity Nashipae -->
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 text-center shadow-lg">
+                    <div class="w-20 h-20 rounded-full bg-gray-700 flex items-center justify-center text-yellow-400 text-3xl mx-auto mb-4">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Charity Nashipae</h3>
+                    <p class="text-yellow-400 text-xs font-semibold uppercase tracking-wider mb-3">Gospel Minister</p>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Samburu worship leader inspiring audiences with profound anthems of devotion and healing.
+                    </p>
+                </div>
+
+                <!-- Artist 8: & Many More -->
+                <div class="bg-gradient-to-br from-yellow-900 to-gray-800 border border-yellow-600 rounded-2xl p-6 text-center shadow-lg flex flex-col items-center justify-center">
+                    <i class="fas fa-users text-yellow-400 text-4xl mb-3"></i>
+                    <h3 class="text-xl font-bold text-white mb-1">&amp; Many More!</h3>
+                    <p class="text-yellow-300 text-xs font-semibold mb-2">Choirs, Bands &amp; Worship Teams</p>
+                    <p class="text-gray-300 text-xs">Full day of non-stop worship, testimonies, and celebration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two-in-One Event Experience -->
+    <section class="py-16 md:py-20 bg-gray-950 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <p class="section-label mb-2">Event Highlights</p>
+                <h2 class="playfair text-3xl md:text-5xl font-bold text-white">What to Expect on 20th November</h2>
+                <div class="w-20 h-1 bg-yellow-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Part 1: CBO Launch -->
+                <div class="bg-gray-900 border border-gray-800 p-8 rounded-3xl relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-600 bg-opacity-20 flex items-center justify-center text-yellow-400 text-2xl mb-6">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-yellow-400">Ceremony &middot; Empowerment</span>
+                    <h3 class="text-2xl font-bold text-white mt-2 mb-4">Official Launch of Wells of Re-Birth CBO</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        The long-awaited official commissioning of Wells of Re-Birth Boy-Child Mentorship &amp; Recovery CBO. Witness community leaders, dignitaries, medical social workers, and families unite under the vision:
+                    </p>
+                    <div class="bg-gray-800 border-l-4 border-yellow-500 p-4 rounded-r-xl mb-6 text-sm text-gray-300">
+                        &ldquo;To restore, mentor and guide the boy-child from addiction into purpose, dignity and responsible manhood through mentorship, psychosocial support and community values.&rdquo;
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-yellow-500"></i> Keynote speeches from Samburu County leadership and dignitaries</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-yellow-500"></i> Unveiling of recovery support programs and mentorship hubs</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-yellow-500"></i> Dedication prayers and community blessing</li>
+                    </ul>
+                </div>
+
+                <!-- Part 2: Praise Jam Concert -->
+                <div class="bg-gray-900 border border-gray-800 p-8 rounded-3xl relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-xl bg-red-600 bg-opacity-20 flex items-center justify-center text-red-400 text-2xl mb-6">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-red-400">Live Worship &middot; Celebration</span>
+                    <h3 class="text-2xl font-bold text-white mt-2 mb-4">Praise Jam Mega Gospel Concert</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        A historic gathering of worship, healing, and joy inside Kenyatta Stadium, Maralal. Free for everyone in Samburu County and visitors from across Kenya and East Africa.
+                    </p>
+                    <div class="bg-gray-800 border-l-4 border-red-500 p-4 rounded-r-xl mb-6 text-sm text-gray-300">
+                        John 7:38 &mdash; &ldquo;Whoever believes in me, as Scripture has said, rivers of living water will flow from within them.&rdquo;
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-red-400"></i> Headline live stage ministry by Rose Muhando &amp; Nelly Naitengel</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-red-400"></i> Back-to-back performances by 7+ national and regional ministers</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-red-400"></i> Powerful praise, youth empowerment testimonies, and spiritual renewal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship & Partnerships Banner -->
+    <section class="py-16 md:py-20 bg-gradient-to-r from-yellow-800 via-yellow-700 to-amber-800 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-black bg-opacity-30 text-yellow-200 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
+                Partner With Us
+            </span>
+            <h2 class="playfair text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
+                Sponsorships &amp; Partnerships Opportunities
+            </h2>
+            <p class="text-yellow-100 text-base md:text-xl leading-relaxed mb-8 max-w-3xl mx-auto">
+                Join hands with Nelly Naitengel and Wells of Re-Birth CBO to impact thousands of youths, families, and communities. Corporates, NGOs, churches, and well-wishers are warmly invited.
+            </p>
+
+            <div class="bg-black bg-opacity-25 backdrop-filter backdrop-blur-sm p-6 md:p-8 rounded-3xl max-w-2xl mx-auto mb-8 border border-yellow-500 border-opacity-30">
+                <p class="text-xs uppercase font-bold tracking-wider text-yellow-300 mb-2">Dedicated Partnership Contact</p>
+                <a href="tel:+254721570698" class="text-2xl md:text-4xl font-extrabold text-white hover:text-yellow-200 transition tracking-wide block mb-3">
+                    <i class="fas fa-phone-alt mr-2 text-yellow-400"></i> +254 721 570 698
+                </a>
+                <p class="text-sm text-yellow-100">
+                    Call, SMS, or WhatsApp directly to discuss event branding, exhibition booths, or CBO sponsorship packages.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/254721570698?text=Hello%20Nelly%20Naitengel,%20I%20would%20like%20to%20partner/sponsor%20the%20Praise%20Jam%20Concert%20and%20CBO%20Launch" target="_blank" class="bg-white text-yellow-800 hover:bg-yellow-100 font-extrabold text-base md:text-lg px-8 py-4 rounded-xl shadow-xl transition inline-flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-green-600 text-xl"></i> Chat on WhatsApp
+                </a>
+                <a href="contact.html" class="bg-gray-900 hover:bg-black text-white font-bold text-base md:text-lg px-8 py-4 rounded-xl shadow-xl transition inline-flex items-center justify-center gap-2 border border-gray-700">
+                    <i class="fas fa-envelope"></i> Send Sponsorship Inquiry
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue & Location Guide -->
+    <section class="py-16 bg-gray-900 border-b border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <i class="fas fa-map-marked-alt text-yellow-500 text-4xl mb-4"></i>
+            <h2 class="playfair text-2xl md:text-4xl font-bold text-white mb-4">Venue &amp; Getting There</h2>
+            <p class="text-gray-300 text-base md:text-lg mb-6">
+                <strong>Kenyatta Stadium</strong> is located centrally in <strong>Maralal town, Samburu County, Kenya</strong>. Accessible by public and private transport. Gates open early in the morning.
+            </p>
+            <div class="inline-flex items-center gap-2 bg-gray-800 border border-gray-700 px-6 py-3 rounded-xl text-sm text-yellow-400 font-semibold">
+                <i class="fas fa-info-circle"></i> Security, medical standby, and family seating will be provided on-site.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white pt-12 md:pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-gray-800">
+            <div class="lg:col-span-2">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center text-white font-bold">NN</div>
+                    <h3 class="text-xl font-bold">Nelly Naitengel</h3>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
+                    Restoring hope, raising sons, and creating lasting change in Samburu County and beyond through faith, service, and community.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-yellow-600 hover:text-white transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-yellow-600 hover:text-white transition"><i class="fab fa-youtube text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-yellow-600 hover:text-white transition"><i class="fab fa-instagram text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-yellow-600 hover:text-white transition"><i class="fab fa-tiktok text-sm"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-gray-100 mb-4 md:mb-5">Quick Links</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-yellow-500 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-500 transition">About Nelly</a></li>
+                    <li><a href="programs.html" class="hover:text-yellow-500 transition">Wells of Re_Birth</a></li>
+                    <li><a href="music.html" class="hover:text-yellow-500 transition">Music &amp; Discography</a></li>
+                    <li><a href="events.html" class="hover:text-yellow-500 transition font-semibold text-yellow-500">Upcoming Events</a></li>
+                    <li><a href="gallery.html" class="hover:text-yellow-500 transition">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-500 transition">Contact</a></li>
+                    <li><a href="billboard-qr.html" class="hover:text-yellow-500 transition">Billboard QR Code</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-gray-100 mb-4 md:mb-5">Event Contact</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt text-yellow-500 mt-1"></i><span>Kenyatta Stadium, Maralal, Samburu County</span></li>
+                    <li class="flex items-center gap-3"><i class="fas fa-phone text-yellow-500"></i><a href="tel:+254721570698" class="hover:text-yellow-500">+254 721 570 698</a></li>
+                    <li class="flex items-center gap-3"><i class="fas fa-envelope text-yellow-500"></i><a href="mailto:info@nellynaitengel.com" class="hover:text-yellow-500">info@nellynaitengel.com</a></li>
+                    <li class="flex items-center gap-3"><i class="fas fa-globe text-yellow-500"></i><span>www.nellynaitengel.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-gray-500 gap-3 text-center md:text-left">
+            <p>&copy; 2026 Nelly Naitengel. All rights reserved.</p>
+            <p>Powered by <span class="text-yellow-500 font-semibold tracking-wide">Extra Levels Marketing</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
